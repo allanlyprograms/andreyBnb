@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Моя визитка</title>
+  <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -12,96 +16,43 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(15px);
-      border-radius: 20px;
-      padding: 30px 25px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin: 0 auto 15px;
-      background: url('https://via.placeholder.com/100') center/cover;
-      border: 3px solid rgba(255,255,255,0.3);
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 20px;
-    }
-
-    .links a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      background: rgba(255,255,255,0.15);
-      padding: 12px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      transition: 0.3s;
-    }
-
-    .links a:hover {
-      background: rgba(255,255,255,0.3);
-      transform: translateY(-2px);
-    }
-
-    .phone {
-      margin-top: 15px;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 20px;
-      }
-    }
   </style>
 </head>
+
 <body>
   <div class="card">
-    <!--<div class="avatar"></div>-->
-    <h1>Махов Андрей Николаевич</h1>
-    <p>Специалист по недвижимости</p>
+    <img src="img/logo.png" alt="Логотип БНБ" class="logo">
+
+    <div class="profile">
+      <div class="avatar"> <img src="img/andrey.png" alt="Описание изображения"> </div>
+      <div class="info">
+        <h1>Махов Андрей Николаевич</h1>
+      </div>
+    </div>
+
+    <p>Недвижимость по всему миру — от подбора до сделки. Помогаю выгодно купить или продать квартиру или дом, проверяю
+      юридическую чистоту и сопровождаю на каждом этапе.</p>
+
+    <ul class="phone-list">
+      <li>+7(922)886-02-25</li>
+      <li>600-225</li>
+    </ul>
 
     <div class="links">
-      <a href="https://www.instagram.com/andrei_rieltor_bnb56?igsh=MW1kMmhqcm40MXpoYQ==" target="_blank">Instagram</a>
-      <a href="https://t.me/andreirieltorbnb56" target="_blank">Telegram</a>
-      <a href="#" target="_blank">Max</a>
-      <a href="https://vk.com/ulitka148" target="_blank">Vk</a>
-    </div>
-
-    <div class="phone">
-      📞 +7(922)886-02-25
-    </div>
-    <div class="phone">
-      📞 600-225
+      <a href="https://www.instagram.com/andrei_rieltor_bnb56?igsh=MW1kMmhqcm40MXpoYQ==" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://t.me/andreirieltorbnb56" target="_blank">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+      <a href="https://max.ru/join/ZaDOxqxCTJ-PfY1jMc0kPcpWkkjMbCUF58fNCwSz8eg" target="_blank">
+        <i class="fas fa-video"></i> Max
+      </a>
+      <a href="https://vk.com/ulitka148" target="_blank">
+        <i class="fab fa-vk"></i> Vk
+      </a>
     </div>
   </div>
 </body>
+
 </html>
